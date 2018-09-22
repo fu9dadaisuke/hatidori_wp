@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/* mixin */
+
+
+/* top_base */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: auto;
+}
+
+body {
+    background-image: none;
+}
+
+div#wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+div#wrapper header {
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 5px 0px 0px;
+    border-image: url(../images/bg.png) 8 0 0 repeat;
+    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.1);
+    transform: translate3d(0px, 0px, 250px);
+    z-index: 10;
+}
+
+div#wrapper header section.header_inner {
+    width: 1170px;
+    margin: 0 auto;
+    letter-spacing: -0.4em;
+}
+
+div#wrapper header section.header_inner h1 {
+    display: inline-block;
+    padding-left: 0;
+    padding-top: 0;
+    width: 13%;
+    letter-spacing: normal;
+    position: relative;
+}
+
+div#wrapper header section.header_inner h1 img {
+    position: absolute;
+    top: -28px;
+    left: 3%;
+}
+
+div#wrapper header section.header_inner nav {
+    width: 87%;
+    display: inline-block;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "YuMincho";
+    letter-spacing: normal;
+}
+
+div#wrapper header section.header_inner nav a:hover {
+    background: none;
+}
+
+div#wrapper header section.header_inner nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    height: 75px;
+}
+
+div#wrapper header section.header_inner nav ul li {
+    padding-right: 6%;
+    display: flex;
+    align-items: center;
+}
+
+div#wrapper header section.header_inner nav ul li:last-of-type {
+    padding-right: 0;
+}
+
+div#wrapper header section.header_inner nav ul li a {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 10px;
+    position: relative;
+}
+
+div#wrapper header section.header_inner nav ul li a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px rgba(28, 130, 217, 0.64) solid;
+    display: block;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    width: 0;
+}
+
+div#wrapper header section.header_inner nav ul li a:hover:after {
+    width: 100%;
+}
+
+div#wrapper header section.header_inner nav ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/top/icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 10px;
+}
+
+div#wrapper section main {
+    width: 1170px;
+    margin: 0 auto;
+    float: none;
+}
+
+div#wrapper section main article section.books {
+    width: 100%;
+    margin-top: 120px;
+}
+
+div#wrapper section main article section.books h2 {
+    color: 434343;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "YuMincho";
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1rem;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+div#wrapper section main article section.books p.sub_title {
+    color: 434343;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "YuMincho";
+    text-align: center;
+    font-weight: normal;
+    margin-top: 10px;
+    letter-spacing: 0.07rem;
+}
+
+div#wrapper section main article section.books div.cover div.prev,
+div#wrapper section main article section.books div.cover div.next {
+    background-color: #fff !important;
+    opacity: 0.7;
+    font-size: 15px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 200px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 3px 4px 0 0;
+    color: #939393;
+}
+
+div#wrapper section main article section.books div.cover div.prev:hover,
+div#wrapper section main article section.books div.cover div.next:hover {
+    opacity: 0.5;
+}
+
+div#wrapper section main article section.books div.cover div.next {
+    right: 0;
+    padding: 3px 0 0 4px;
+}
+
+div#wrapper section main article section {
+    margin-top: 100px;
+}
+
+div#wrapper section main article section h2 {
+    color: 434343;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "YuMincho";
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1rem;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+div#wrapper section main article section p.sub_title {
+    color: 434343;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "YuMincho";
+    text-align: center;
+    font-weight: normal;
+    margin-top: 10px;
+    letter-spacing: 0.07rem;
+}
+
+div#wrapper section main article section div.column_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div#wrapper section main article section div.column_box div.column_3 {
+    width: 33%;
+    box-shadow: 0 0 3px #edecec;
+}
+
+div#wrapper section main article section div.column_box div.column_3:last-of-type {
+    padding-right: 0;
+}
+
+div#wrapper section main article section div.column_box div.column_3 img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+div#wrapper section main article section div.column_box div.column_3 div.text_box {
+    width: 100%;
+    padding: 0 2%;
+    color: #555;
+}
+
+div#wrapper section main article section div.column_box div.column_3 div.text_box p.name_sub {
+    color: 434343;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "YuMincho";
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+div#wrapper section main article section div.column_box div.column_3 div.text_box p.name {
+    color: 434343;
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "Yu Mincho", "YuMincho";
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 20px;
+    line-height: 2rem;
+    min-height: 65px;
+}
+
+div#wrapper section main article section div#media_list ul.column_box li.column_4 {
+    width: 23%;
+    margin: 0 1% 1%;
+}
+
+div#wrapper section main article section div#media_list ul.column_box li.column_4 div.media_info h3 {
+    font-weight: normal;
+    font-size: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+footer {
+    padding-top: 40px;
+    background-image: url(../images/bg.png) !important;
+}
+
+button.modal-aside {
+    display: none;
+}
+
+nav.sp_nav {
+    display: none;
+}
+
+
+/*# sourceMappingURL=top.css.map */
