@@ -98,7 +98,9 @@
                     </section>
                     <section>
                         <h2>作家のご紹介</h2>
-                        <p class="sub_title">個性あふれる作家さんたちの活動や本のつくり方
+                        <p class="sub_title pc_block">個性あふれる作家さんたちの活動や本のつくり方
+                        </p>
+                        <p class="sub_title sp_block">作家さんの活動や本のつくり方
                         </p>
                         <div class="column_box">
                             <div class="column_3">
