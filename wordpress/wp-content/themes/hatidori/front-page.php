@@ -73,7 +73,12 @@
                         <h2>本のご紹介</h2>
                         <p class="sub_title">本のわくから飛び出した本のかたち</p>
                         <div class="cover">
-                            <ul class="slick-box">
+                            <ul class="slick-box pc_block">
+                                <li><img src="https://placehold.jp/1170x400.png" alt=""></li>
+                                <li><img src="https://placehold.jp/1170x400.png" alt=""></li>
+                                <li><img src="https://placehold.jp/1170x400.png" alt=""></li>
+                            </ul>
+                            <ul class="slick-box sp_block">
                                 <li><img src="https://placehold.jp/1170x400.png" alt=""></li>
                                 <li><img src="https://placehold.jp/1170x400.png" alt=""></li>
                                 <li><img src="https://placehold.jp/1170x400.png" alt=""></li>
@@ -99,27 +104,27 @@
                             <div class="column_3">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/author01.png" alt="写真">
                                 <div class="text_box">
-                                    <p class="name">水上 庭</p>
-                                    <p class="text-center">舞台俳優／小説家</p>
-                                    <p>東京芸術大学美術学部先端芸術表現科卒。俳優として活動する傍ら、桐沢たえ名義で同人誌小説を執筆。<br>舞台の脚本のような視覚化しやすい表現と繊細な心の変化を捉えた描写に定評がある。
+                                    <p class="name">melancolia storytelling<br>（相澤 歩）</p>
+                                    <p class="text-center">シンガーソングライター</p>
+                                    <p> 見たことはないけれどよく知ってるような景色をテーマにしたうたと物語と写真と映像と庭をつくる。<br class="pc_block">Twitterとinstagramでオリジナルストーリーをほぼ毎日配信中。
                                     </p>
                                 </div>
                             </div>
                             <div class="column_3">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/author02.png" alt="写真">
                                 <div class="text_box">
-                                    <p class="name">joh</p>
-                                    <p class="text-center">絵描き</p>
-                                    <p>東京と名古屋を中心に活動中。暮らしのなかにある気づきをコンセプトにした作品をつくる。<br>ショッピングモールでのライブペイントや子どものための絵画教室などを通して、絵を描くことの楽しさも伝える。
+                                    <p class="name">水上 庭</p>
+                                    <p class="text-center">舞台俳優／小説家</p>
+                                    <p>東京芸術大学美術学部先端芸術表現科卒。俳優として活動する傍ら、桐沢たえ名義で同人誌小説を執筆。<br class="pc_block">舞台の脚本のような視覚化しやすい表現と繊細な心の変化を捉えた描写に定評がある。
                                     </p>
                                 </div>
                             </div>
                             <div class="column_3">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/author03.png" alt="写真">
                                 <div class="text_box">
-                                    <p class="name">melancolia storytelling<br>（相澤 歩）</p>
-                                    <p class="text-center">シンガーソングライター</p>
-                                    <p> 見たことはないけれどよく知ってるような景色をテーマにしたうたと物語と写真と映像と庭をつくる。<br>Twitterとinstagramでオリジナルストーリーをほぼ毎日配信中。
+                                    <p class="name">joh</p>
+                                    <p class="text-center">絵描き</p>
+                                    <p>東京と名古屋を中心に活動中。暮らしのなかにある気づきをコンセプトにした作品をつくる。<br>ショッピングモールでのライブペイントや子どものための絵画教室などを通して、絵を描くことの楽しさも伝える。
                                     </p>
                                 </div>
                             </div>

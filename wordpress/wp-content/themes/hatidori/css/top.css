@@ -274,5 +274,13 @@ nav.sp_nav {
     display: none;
 }
 
+button.modal-aside {
+    display: none;
+}
+
+nav.sp_nav {
+    display: none;
+}
+
 
 /*# sourceMappingURL=top.css.map */

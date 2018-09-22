@@ -1,114 +1,192 @@
 /* mixin */
+
 img {
-  width: 100%; }
+    width: 100%;
+}
+
+.pc_block {
+    display: none!important;
+}
+
+.sp_block {
+    display: block!important;
+}
 
 div#wrapper header {
-  position: static;
-  height: 70px;
-  box-shadow: none; }
-  div#wrapper header section.header_inner {
-    width: 100% !important; }
-    div#wrapper header section.header_inner nav {
-      display: none !important; }
-    div#wrapper header section.header_inner h1 {
-      margin-top: 20px;
-      width: 100%; }
-      div#wrapper header section.header_inner h1 img {
-        position: inherit;
-        width: 100px !important;
-        height: inherit;
-        margin: 0 auto; }
+    position: static;
+    height: 70px;
+    box-shadow: none;
+}
+
+div#wrapper header section.header_inner {
+    width: 100% !important;
+}
+
+div#wrapper header section.header_inner nav {
+    display: none !important;
+}
+
+div#wrapper header section.header_inner h1 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+div#wrapper header section.header_inner h1 img {
+    position: inherit;
+    width: 100px !important;
+    height: inherit;
+    margin: 0 auto;
+}
+
 div#wrapper section.container {
-  width: 100% !important; }
-  div#wrapper section.container main {
-    width: 100% !important; }
-    div#wrapper section.container main article section {
-      margin-top: 30px; }
-      div#wrapper section.container main article section h2 {
-        font-size: 11px;
-        font-size: 1.1rem;
-        letter-spacing: 0.5rem; }
-      div#wrapper section.container main article section p.sub_title {
-        font-size: 8px;
-        font-size: 0.8rem;
-        letter-spacing: 0.1rem; }
-      div#wrapper section.container main article section div.cover div.prev, div#wrapper section.container main article section div.cover div.next {
-        display: none !important; }
-      div#wrapper section.container main article section div.column_box {
-        display: block !important; }
-        div#wrapper section.container main article section div.column_box div.column_3 {
-          width: 100% !important;
-          box-shadow: 0 0 0;
-          margin-bottom: 50px; }
-          div#wrapper section.container main article section div.column_box div.column_3 img {
-            width: 100%; }
-          div#wrapper section.container main article section div.column_box div.column_3 div.text_box p.name {
-            min-height: auto !important;
-            font-size: 13px;
-            font-size: 1.3rem; }
-      div#wrapper section.container main article section div#media_list ul.column_box li.column_4 {
-        width: 48%;
-        margin-bottom: 0; }
-        div#wrapper section.container main article section div#media_list ul.column_box li.column_4 a div.media_info h3 {
-          font-size: 9px;
-          font-size: 0.9rem; }
+    width: 100% !important;
+}
+
+div#wrapper section.container main {
+    width: 100% !important;
+}
+
+div#wrapper section.container main article section {
+    margin-top: 30px;
+}
+
+div#wrapper section.container main article section h2 {
+    font-size: 11px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5rem;
+}
+
+div#wrapper section.container main article section p.sub_title {
+    font-size: 8px;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+div#wrapper section.container main article section div.cover div.prev,
+div#wrapper section.container main article section div.cover div.next {
+    display: none !important;
+}
+
+div#wrapper section.container main article section div.column_box {
+    display: block !important;
+}
+
+div#wrapper section.container main article section div.column_box div.column_3 {
+    width: 100% !important;
+    box-shadow: 0 0 0;
+    margin-bottom: 50px;
+}
+
+div#wrapper section.container main article section div.column_box div.column_3 img {
+    width: 100%;
+}
+
+div#wrapper section.container main article section div.column_box div.column_3 div.text_box p.name {
+    min-height: auto !important;
+    font-size: 13px;
+    font-size: 1.3rem;
+}
+
+div#wrapper section.container main article section div#media_list ul.column_box li.column_4 {
+    width: 98%;
+    margin-bottom: 25px;
+    min-height: initial;
+    min-height: auto;
+    max-height: initial;
+    max-height: auto;
+}
+
+div#wrapper section.container main article section div#media_list ul.column_box li.column_4 a div.media_info h3 {
+    font-size: 9px;
+    font-size: 0.9rem;
+    padding-left: 2%;
+}
+
+div#wrapper div.mt-medium {
+    margin-top: 0;
+}
+
 div#wrapper div.container {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  div#wrapper div.container ul li {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div#wrapper div.container ul li {
     float: none;
     width: 80%;
     margin-right: 10%;
-    margin-left: 10%; }
-    div#wrapper div.container ul li:first-of-type {
-      margin-bottom: 10px; }
-  div#wrapper div.container div.link_contact {
-    float: none;
-    width: 100%; }
-    div#wrapper div.container div.link_contact h2 {
-      text-align: center; }
-    div#wrapper div.container div.link_contact p.mt-medium a img {
-      width: auto;
-      display: inline-block; }
-  div#wrapper div.container div.link_facebook {
+    margin-left: 10%;
+}
+
+div#wrapper div.container ul li:first-of-type {
+    margin-bottom: 10px;
+}
+
+div#wrapper div.container div.link_contact {
     float: none;
     width: 100%;
-    margin-left: 0 !important; }
+}
+
+div#wrapper div.container div.link_contact h2 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+div#wrapper div.container div.link_contact p.mt-medium a img {
+    width: auto;
+    display: inline-block;
+}
+
+div#wrapper div.container div.link_facebook {
+    float: none;
+    width: 100%;
+    margin-left: 0 !important;
+}
 
 footer {
-  padding-top: 10px; }
-  footer div.container {
-    display: none; }
-  footer small {
-    margin-top: 13px; }
+    padding-top: 10px;
+}
+
+footer div.container {
+    display: none;
+}
+
+footer small {
+    margin-top: 13px;
+}
 
 button.modal-aside {
-  display: block;
-  padding: 0;
-  position: fixed;
-  right: 0;
-  z-index: 200;
-  bottom: 40px;
-  background: transparent; }
+    display: block;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    z-index: 200;
+    bottom: 40px;
+    background: transparent;
+}
 
 nav.sp_nav {
-  position: relative;
-  width: 100%;
-  display: none; }
+    position: relative;
+    width: 100%;
+    display: none;
+}
 
 nav.sp_nav.open.fixed {
-  display: block;
-  position: fixed;
-  background: rgba(255, 231, 0, 0.75);
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  z-index: 99;
-  padding: 15px;
-  transform: translate3d(0px, 0px, 250px); }
-  nav.sp_nav.open.fixed ul {
+    display: block;
+    position: fixed;
+    background: rgba(255, 231, 0, 0.75);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    padding: 15px;
+    transform: translate3d(0px, 0px, 250px);
+}
+
+nav.sp_nav.open.fixed ul {
     display: block;
     position: fixed;
     top: 0;
@@ -117,18 +195,22 @@ nav.sp_nav.open.fixed {
     background: #fff;
     z-index: 100;
     padding: 15px 25px;
-    margin: 3%; }
-    nav.sp_nav.open.fixed ul li a {
-      width: 100%;
-      border-bottom: 1px solid #e8e8e8;
-      font-size: 15px;
-      font-weight: bold;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-bottom: 0 !important;
-      color: #777;
-      display: block; }
-  nav.sp_nav.open.fixed button.close {
+    margin: 3%;
+}
+
+nav.sp_nav.open.fixed ul li a {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0 !important;
+    color: #777;
+    display: block;
+}
+
+nav.sp_nav.open.fixed button.close {
     display: none;
     z-index: 110;
     position: fixed;
@@ -141,6 +223,8 @@ nav.sp_nav.open.fixed {
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
-    overflow: visible; }
+    overflow: visible;
+}
+
 
 /*# sourceMappingURL=top_sp.css.map */
