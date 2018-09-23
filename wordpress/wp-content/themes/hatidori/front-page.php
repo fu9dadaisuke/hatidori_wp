@@ -138,6 +138,7 @@
                         <div id="media_list">
                             <ul class="clearfix column_box">
                                 <!-- news -->
+
                                 <?php query_posts('posts_per_page=8'); ?>
 
                                 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -165,7 +166,9 @@
                                                         </div>
                                     </a>
                                 </li>
+
                                 <?php endwhile; // end of the loop. ?>
+
                                 <!-- end news -->
                             </ul>
                             </div>

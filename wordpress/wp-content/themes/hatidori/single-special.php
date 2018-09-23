@@ -98,24 +98,62 @@
                         <div class="column_box">
                             <div class="column_2">
                                 <p class="review-title">
-                                    <?php echo get_post_meta($post->ID, 'review_title', true); ?>
+                                    <?php echo get_post_meta($post->ID, 'review1_title', true); ?>
                                 </p>
-                                <p>悩みがある時に読んでも、背中を押してくれるような、いつでもパワーを分けてくれる、オトナのための絵本です。 好きな色ばかりに仕上げてもらったので、お願いして正解でした！ 子供を持つ友人に、ぬり絵タイプの方をプレゼントしたいなと思いました。
+                                <p>
+                                    <?php echo get_post_meta($post->ID, 'review1_text', true); ?>
                                 </p>
-                                <p class="name">aicoさん</p>
+                                <p class="name">
+                                    <?php echo get_post_meta($post->ID, 'review1_name', true); ?>
+                                </p>
                             </div>
-                            <!-- <div class="column_2">
-                                <p class="review-title">タイトル</p>
-                                <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-                                <p class="name">推薦者</p>
-                            </div> -->
-
-
+                            <?php if(post_custom('review2_on') == 'display'): ?>
+                            <div class="column_2">
+                                <p class="review-title">
+                                    <?php echo get_post_meta($post->ID, 'review2_title', true); ?>
+                                </p>
+                                <p>
+                                    <?php echo get_post_meta($post->ID, 'review2_text', true); ?>
+                                </p>
+                                <p class="name">
+                                    <?php echo get_post_meta($post->ID, 'review2_name', true); ?>
+                                </p>
+                            </div>
+                            <?php endif; ?>
                         </div>
-                        <!-- <span>
-                            <a class="btn" href="">その他の読者の感想へ</a>
-                        </span> -->
-
+                        <div class="column_box">
+                            <?php if(post_custom('review3_on') == 'display'): ?>
+                            <div class="column_2">
+                                <p class="review-title">
+                                    <?php echo get_post_meta($post->ID, 'review3_title', true); ?>
+                                </p>
+                                <p>
+                                    <?php echo get_post_meta($post->ID, 'review3_text', true); ?>
+                                </p>
+                                <p class="name">
+                                    <?php echo get_post_meta($post->ID, 'review3_name', true); ?>
+                                </p>
+                            </div>
+                            <?php endif; ?>
+                            <?php if(post_custom('review4_on') == 'display'): ?>
+                            <div class="column_2">
+                                <p class="review-title">
+                                    <?php echo get_post_meta($post->ID, 'review4_title', true); ?>
+                                </p>
+                                <p>
+                                    <?php echo get_post_meta($post->ID, 'review4_text', true); ?>
+                                </p>
+                                <p class="name">
+                                    <?php echo get_post_meta($post->ID, 'review4_name', true); ?>
+                                </p>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                        <?php if(post_custom('review_btn_on') == 'display'): ?>
+                        <span>
+                            <a class="btn" href="<?php echo get_post_meta($post->ID, 'review_btn', true); ?>">その他の読者の感想へ</a>
+                        </span>
+                        <?php endif; ?>
                     </section>
                     <section id="shop">
                         <h2 class="info-title">ショップ情報</h2>
@@ -163,9 +201,16 @@
                                         <?php echo get_post_meta($post->ID, 'author_name', true); ?>
                                     </p>
                                     <ul class="sns">
-                                        <!--  <li><a href=""><i class="fab fa-twitter-square fa-2x"></i></a></li> -->
-                                        <li><a href="https://www.facebook.com/joh.joh.18"><i class="fab fa-facebook fa-2x"></i></a></li>
-                                        <li><a href="https://www.instagram.com/lag5tag6/"><i class="fab fa-instagram fa-2x"></i></a></li>
+                                        <?php if(post_custom('twitter_on') == 'display'): ?>
+                                        <li><a href="<?php echo get_post_meta($post->ID, 'twitter', true); ?>"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                                        <?php endif; ?>
+                                        <?php if(post_custom('facebook_on') == 'display'): ?>
+                                        <li><a href="<?php echo get_post_meta($post->ID, 'facebook', true); ?>"><i class="fab fa-facebook fa-2x"></i></a></li>
+                                        <?php endif; ?>
+                                        <?php if(post_custom('instagram_on') == 'display'): ?>
+                                        <li><a href="<?php echo get_post_meta($post->ID, 'instagram', true); ?>"><i class="fab fa-instagram fa-2x"></i></a></li>
+                                        <?php endif; ?>
+
                                     </ul>
                                 </div>
                                 <p>
@@ -212,6 +257,7 @@
                             </ul>
                         </div>
                     </section>
+                    <?php if(post_custom('relation_on') == 'display'): ?>
                     <section id="relation">
                         <h2 class="info-title">関連情報</h2>
 
@@ -230,12 +276,12 @@
                                     <p>
                                         <?php echo get_post_meta($post->ID, 'relation_text', true); ?>
                                     </p>
-                                    <a href="#">詳しく読む</a>
+                                    <a href="<?php echo get_post_meta($post->ID, 'relation_link', true); ?>">詳しく読む</a>
                                 </div>
                             </div>
                         </div>
                     </section>
-
+                    <?php endif; ?>
                 </article>
             </main>
             <!-- end main-->

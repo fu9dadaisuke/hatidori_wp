@@ -1,399 +1,612 @@
 @charset "UTF-8";
 img {
-  max-width: 100%; }
+    max-width: 100%;
+}
 
 h1.info-title {
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
-  font-weight: bold; }
-  @media (max-width: 480px) {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
     h1.info-title {
-      font-size: 11px;
-      font-size: 1.1rem;
-      text-align: center; } }
+        font-size: 11px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
 
 h2.info-title {
-  font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
-  font-weight: bold;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 40px;
-  border-bottom: 1px solid #888888; }
-  @media (max-width: 480px) {
+    font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 40px;
+    border-bottom: 1px solid #888888;
+}
+
+@media (max-width: 480px) {
     h2.info-title {
-      font-size: 10px;
-      font-size: 1rem;
-      line-height: 30px; } }
+        font-size: 10px;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+}
 
 img.info-key {
-  margin-top: 20px; }
+    margin-top: 20px;
+}
 
 div.anchor-box {
-  margin: 30px 0;
-  padding: 10px;
-  border-top: solid 1px #7b7a7a;
-  border-bottom: solid 1px #7b7a7a;
-  display: flex;
-  justify-content: space-between; }
-  @media (max-width: 480px) {
+    margin: 30px 0;
+    padding: 10px;
+    border-top: solid 1px #7b7a7a;
+    border-bottom: solid 1px #7b7a7a;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
     div.anchor-box {
-      display: block;
-      border: none; } }
-  div.anchor-box a {
+        display: block;
+        border: none;
+    }
+}
+
+div.anchor-box a {
     font-weight: bold;
     width: 100%;
-    text-align: center; }
-    @media (max-width: 480px) {
-      div.anchor-box a {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    div.anchor-box a {
         display: block;
         border-top: solid 1px #7b7a7a;
-        line-height: 50px; }
-        div.anchor-box a:last-of-type {
-          border-bottom: solid 1px #7b7a7a; } }
-    div.anchor-box a i {
-      margin-right: 2px; }
+        line-height: 50px;
+    }
+    div.anchor-box a:last-of-type {
+        border-bottom: solid 1px #7b7a7a;
+    }
+}
+
+div.anchor-box a i {
+    margin-right: 2px;
+}
 
 section#book {
-  margin-top: 50px; }
-  @media (max-width: 480px) {
+    margin-top: 50px;
+}
+
+@media (max-width: 480px) {
     section#book {
-      margin-top: 30px; } }
-  section#book section {
-    margin-top: 20px; }
+        margin-top: 30px;
+    }
+}
+
+section#book section {
+    margin-top: 20px;
+}
+
+section#book section h3.title {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-family: YuGothic, 游ゴシック, sans-serif;
+    font-weight: normal;
+}
+
+@media (max-width: 480px) {
     section#book section h3.title {
-      font-size: 12px;
-      font-size: 1.2rem;
-      font-family: YuGothic, 游ゴシック, sans-serif;
-      font-weight: normal; }
-      @media (max-width: 480px) {
-        section#book section h3.title {
-          font-size: 10px;
-          font-size: 1rem; } }
+        font-size: 10px;
+        font-size: 1rem;
+    }
+}
 
 section#review {
-  margin-top: 50px; }
-  @media (max-width: 480px) {
+    margin-top: 50px;
+}
+
+@media (max-width: 480px) {
     section#review {
-      margin-top: 30px; } }
-  section#review div.column_box {
+        margin-top: 30px;
+    }
+}
+
+section#review div.column_box {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; }
-    @media (max-width: 480px) {
-      section#review div.column_box {
-        display: block; } }
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    section#review div.column_box {
+        display: block;
+    }
+}
+
+section#review div.column_box div.column_2 {
+    width: 50%;
+    margin-right: 2%;
+    box-shadow: 0 2px rgba(203, 202, 202, 0.66);
+    border: 1px solid #eee;
+    padding: 20px 2%;
+    background-color: #f9f8ec;
+    color: #83807a;
+    min-height: 400px;
+    position: relative;
+}
+
+@media (max-width: 480px) {
     section#review div.column_box div.column_2 {
-      width: 50%;
-      margin-right: 2%;
-      box-shadow: 0 2px rgba(203, 202, 202, 0.66);
-      border: 1px solid #eee;
-      padding: 20px 2%;
-      background-color: #f9f8ec;
-      color: #83807a;
-      min-height: 400px;
-      position: relative; }
-      @media (max-width: 480px) {
-        section#review div.column_box div.column_2 {
-          width: 100%;
-          margin-bottom: 10px; } }
-      section#review div.column_box div.column_2:last-of-type {
-        margin-right: 0;
-        margin-left: 2%; }
-        @media (max-width: 480px) {
-          section#review div.column_box div.column_2:last-of-type {
-            margin-left: 0; } }
-      @media (max-width: 480px) {
-        section#review div.column_box div.column_2 {
-          min-height: initial;
-          min-height: 250px; } }
-      section#review div.column_box div.column_2 p.review-title {
-        font-size: 13px;
-        font-size: 1.3rem;
-        font-weight: bold;
-        position: relative; }
-        @media (max-width: 480px) {
-          section#review div.column_box div.column_2 p.review-title {
-            text-align: center;
-            font-size: 10px;
-            font-size: 1rem; } }
-        section#review div.column_box div.column_2 p.review-title:after {
-          content: "";
-          background: url(/info_images/stamp.png);
-          background-size: 70px 51px;
-          width: 70px;
-          height: 51px;
-          background-repeat: no-repeat;
-          position: absolute;
-          right: 5px;
-          top: -10px;
-          opacity: 0.7; }
-      section#review div.column_box div.column_2 p {
-        line-height: 30px;
-        font-style: italic;
-        font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝; }
-      section#review div.column_box div.column_2 p.name {
-        text-align: right;
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
-        font-size: 12px;
-        font-size: 1.2rem; }
-        @media (max-width: 480px) {
-          section#review div.column_box div.column_2 p.name {
-            font-size: 10px;
-            font-size: 1rem; } }
-  section#review span {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+section#review div.column_box div.column_2:last-of-type {
+    margin-right: 0;
+    margin-left: 2%;
+}
+
+@media (max-width: 480px) {
+    section#review div.column_box div.column_2:last-of-type {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    section#review div.column_box div.column_2 {
+        min-height: initial;
+        min-height: 250px;
+    }
+}
+
+section#review div.column_box div.column_2 p.review-title {
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: relative;
+}
+
+@media (max-width: 480px) {
+    section#review div.column_box div.column_2 p.review-title {
+        text-align: center;
+        font-size: 10px;
+        font-size: 1rem;
+    }
+}
+
+section#review div.column_box div.column_2 p.review-title:after {
+    content: "";
+    background: url(../images/special/stamp.png);
+    background-size: 70px 51px;
+    width: 70px;
+    height: 51px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    opacity: 0.7;
+}
+
+section#review div.column_box div.column_2 p {
+    line-height: 30px;
+    font-style: italic;
+    font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
+}
+
+section#review div.column_box div.column_2 p.name {
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    section#review div.column_box div.column_2 p.name {
+        font-size: 10px;
+        font-size: 1rem;
+    }
+}
+
+section#review span {
     display: block;
     width: 100%;
     text-align: center;
-    margin-top: 15px; }
+    margin-top: 15px;
+}
+
+section#review span a.btn {
+    margin: 0 auto;
+    box-shadow: 0 2px rgba(203, 202, 202, 0.66);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: #444444;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 20px;
+    display: inline-block;
+    width: 70%;
+    background: #f6f6f6;
+    position: relative;
+}
+
+section#review span a.btn:hover {
+    opacity: 0.7;
+}
+
+section#review span a.btn:before {
+    content: "\f086";
+    font-family: FontAwesome;
+}
+
+@media (max-width: 480px) {
     section#review span a.btn {
-      margin: 0 auto;
-      box-shadow: 0 2px rgba(203, 202, 202, 0.66);
-      text-align: center;
-      padding: 15px 0;
-      width: 100%;
-      border-radius: 5px;
-      color: #444444;
-      font-size: 10px;
-      font-size: 1rem;
-      line-height: 20px;
-      display: inline-block;
-      width: 70%;
-      background: #f6f6f6;
-      position: relative; }
-      section#review span a.btn:hover {
-        opacity: 0.7; }
-      section#review span a.btn:before {
-        content: "\f086";
-        font-family: FontAwesome; }
-      @media (max-width: 480px) {
-        section#review span a.btn {
-          width: 100%; } }
+        width: 100%;
+    }
+}
 
 section#shop {
-  margin-top: 50px; }
-  @media (max-width: 480px) {
+    margin-top: 50px;
+}
+
+@media (max-width: 480px) {
     section#shop {
-      margin-top: 30px; } }
-  section#shop div.column_box {
+        margin-top: 30px;
+    }
+}
+
+section#shop div.column_box {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; }
-    @media (max-width: 480px) {
-      section#shop div.column_box {
-        display: block; } }
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    section#shop div.column_box {
+        display: block;
+    }
+}
+
+section#shop div.column_box div.column_2 {
+    width: 50%;
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
     section#shop div.column_box div.column_2 {
-      width: 50%;
-      margin-right: 2%; }
-      @media (max-width: 480px) {
-        section#shop div.column_box div.column_2 {
-          width: 100%;
-          margin-bottom: 10px; } }
-      section#shop div.column_box div.column_2:last-of-type {
-        margin-right: 0;
-        margin-left: 2%; }
-        @media (max-width: 480px) {
-          section#shop div.column_box div.column_2:last-of-type {
-            margin-left: 0; } }
-      section#shop div.column_box div.column_2 dl {
-        display: flex;
-        border-bottom: 1px solid #aaaaaa;
-        padding-bottom: 10px; }
-        section#shop div.column_box div.column_2 dl dt {
-          width: 50%; }
-          @media (max-width: 480px) {
-            section#shop div.column_box div.column_2 dl dt {
-              width: 30%; } }
-        section#shop div.column_box div.column_2 dl dd {
-          width: 50%; }
-          @media (max-width: 480px) {
-            section#shop div.column_box div.column_2 dl dd {
-              width: 70%; } }
-      section#shop div.column_box div.column_2 a.btn {
-        background-color: #fbed5e;
-        box-shadow: 0 2px rgba(203, 202, 202, 0.66);
-        text-align: center;
-        padding: 15px 0;
         width: 100%;
-        border-radius: 5px;
-        color: #444444;
-        font-size: 10px;
-        font-size: 1rem;
-        line-height: 20px;
-        width: 100%;
-        display: inline-block;
-        position: relative; }
-        section#shop div.column_box div.column_2 a.btn:hover {
-          opacity: 0.7; }
-        section#shop div.column_box div.column_2 a.btn:before {
-          content: "\f07a";
-          font-family: FontAwesome; }
+        margin-bottom: 10px;
+    }
+}
+
+section#shop div.column_box div.column_2:last-of-type {
+    margin-right: 0;
+    margin-left: 2%;
+}
+
+@media (max-width: 480px) {
+    section#shop div.column_box div.column_2:last-of-type {
+        margin-left: 0;
+    }
+}
+
+section#shop div.column_box div.column_2 dl {
+    display: flex;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 10px;
+}
+
+section#shop div.column_box div.column_2 dl dt {
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+    section#shop div.column_box div.column_2 dl dt {
+        width: 30%;
+    }
+}
+
+section#shop div.column_box div.column_2 dl dd {
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+    section#shop div.column_box div.column_2 dl dd {
+        width: 70%;
+    }
+}
+
+section#shop div.column_box div.column_2 a.btn {
+    background-color: #fbed5e;
+    box-shadow: 0 2px rgba(203, 202, 202, 0.66);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: #444444;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 20px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+section#shop div.column_box div.column_2 a.btn:hover {
+    opacity: 0.7;
+}
+
+section#shop div.column_box div.column_2 a.btn:before {
+    content: "\f07a";
+    font-family: FontAwesome;
+}
 
 section#author {
-  margin-top: 50px; }
-  @media (max-width: 480px) {
+    margin-top: 50px;
+}
+
+@media (max-width: 480px) {
     section#author {
-      margin-top: 30px; } }
-  section#author div.column_box {
+        margin-top: 30px;
+    }
+}
+
+section#author div.column_box {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; }
-    @media (max-width: 480px) {
-      section#author div.column_box {
-        display: block; } }
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    section#author div.column_box {
+        display: block;
+    }
+}
+
+section#author div.column_box div.column_2 {
+    width: 50%;
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
     section#author div.column_box div.column_2 {
-      width: 50%;
-      margin-right: 2%; }
-      @media (max-width: 480px) {
-        section#author div.column_box div.column_2 {
-          width: 100%;
-          margin-bottom: 10px; } }
-      section#author div.column_box div.column_2:last-of-type {
-        margin-right: 0;
-        margin-left: 2%; }
-        @media (max-width: 480px) {
-          section#author div.column_box div.column_2:last-of-type {
-            margin-left: 0; } }
-      section#author div.column_box div.column_2:first-of-type {
-        width: 30%; }
-        @media (max-width: 480px) {
-          section#author div.column_box div.column_2:first-of-type {
-            width: 100%; } }
-      section#author div.column_box div.column_2:last-of-type {
-        width: 70%; }
-        @media (max-width: 480px) {
-          section#author div.column_box div.column_2:last-of-type {
-            width: 100%; } }
-      section#author div.column_box div.column_2 img {
-        margin: 0 auto; }
-      section#author div.column_box div.column_2 div.profile {
         width: 100%;
-        display: flex; }
-        section#author div.column_box div.column_2 div.profile p.name {
-          font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
-          font-weight: bold;
-          font-size: 20px;
-          font-size: 2rem;
-          width: 50%; }
-          @media (max-width: 480px) {
-            section#author div.column_box div.column_2 div.profile p.name {
-              font-size: 15px;
-              font-size: 1.5rem; } }
-        section#author div.column_box div.column_2 div.profile ul.sns {
-          width: 50%;
-          display: flex;
-          justify-content: flex-start;
-          padding-top: 5px; }
-          section#author div.column_box div.column_2 div.profile ul.sns li {
-            margin-right: 5px; }
-  section#author div.movie {
+        margin-bottom: 10px;
+    }
+}
+
+section#author div.column_box div.column_2:last-of-type {
+    margin-right: 0;
+    margin-left: 2%;
+}
+
+@media (max-width: 480px) {
+    section#author div.column_box div.column_2:last-of-type {
+        margin-left: 0;
+    }
+}
+
+section#author div.column_box div.column_2:first-of-type {
+    width: 30%;
+}
+
+@media (max-width: 480px) {
+    section#author div.column_box div.column_2:first-of-type {
+        width: 100%;
+    }
+}
+
+section#author div.column_box div.column_2:last-of-type {
+    width: 70%;
+}
+
+@media (max-width: 480px) {
+    section#author div.column_box div.column_2:last-of-type {
+        width: 100%;
+    }
+}
+
+section#author div.column_box div.column_2 img {
+    margin: 0 auto;
+}
+
+section#author div.column_box div.column_2 div.profile {
+    width: 100%;
+    display: flex;
+}
+
+section#author div.column_box div.column_2 div.profile p.name {
+    font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: 2rem;
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+    section#author div.column_box div.column_2 div.profile p.name {
+        font-size: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+section#author div.column_box div.column_2 div.profile ul.sns {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5px;
+}
+
+section#author div.column_box div.column_2 div.profile ul.sns li {
+    margin-right: 5px;
+}
+
+section#author div.movie {
     width: 100%;
     background-color: #eee;
     display: flex;
     justify-content: center;
-    margin-top: 30px; }
-  section#author div.event {
+    margin-top: 30px;
+}
+
+section#author div.event {
     margin-top: 30px;
     width: 100%;
     background-color: #f9f8f6;
-    padding: 20px 3%; }
-    section#author div.event p.event_title {
-      font-weight: bold;
-      font-size: 10px;
-      font-size: 1rem;
-      margin-bottom: 0;
-      margin-top: 15px; }
+    padding: 20px 3%;
+}
+
+section#author div.event p.event_title {
+    font-weight: bold;
+    font-size: 10px;
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
 
 section#relation {
-  margin-top: 50px; }
-  @media (max-width: 480px) {
+    margin-top: 50px;
+}
+
+@media (max-width: 480px) {
     section#relation {
-      margin-top: 30px; } }
-  section#relation div.relation-box {
+        margin-top: 30px;
+    }
+}
+
+section#relation div.relation-box {
     border: 1px solid #aaaaaa;
     padding: 20px 3%;
     margin-top: 30px;
-    margin-bottom: 30px; }
-    section#relation div.relation-box h3.relation-title {
-      font-weight: bold;
-      font-size: 10px;
-      font-size: 1rem; }
-      @media (max-width: 480px) {
-        section#relation div.relation-box h3.relation-title {
-          text-align: center; } }
-    section#relation div.relation-box div.column_box {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px; }
-      @media (max-width: 480px) {
-        section#relation div.relation-box div.column_box {
-          display: block; } }
-      section#relation div.relation-box div.column_box div.column_2 {
-        width: 50%;
-        margin-right: 2%; }
-        @media (max-width: 480px) {
-          section#relation div.relation-box div.column_box div.column_2 {
-            width: 100%;
-            margin-bottom: 10px; } }
-        section#relation div.relation-box div.column_box div.column_2:last-of-type {
-          margin-right: 0;
-          margin-left: 2%; }
-          @media (max-width: 480px) {
-            section#relation div.relation-box div.column_box div.column_2:last-of-type {
-              margin-left: 0; } }
-        section#relation div.relation-box div.column_box div.column_2:first-of-type {
-          width: 30%; }
-          @media (max-width: 480px) {
-            section#relation div.relation-box div.column_box div.column_2:first-of-type {
-              width: 100%; } }
-        section#relation div.relation-box div.column_box div.column_2:last-of-type {
-          width: 70%; }
-          @media (max-width: 480px) {
-            section#relation div.relation-box div.column_box div.column_2:last-of-type {
-              width: 100%; } }
-        @media (max-width: 480px) {
-          section#relation div.relation-box div.column_box div.column_2 img {
-            margin: 0 auto; } }
+    margin-bottom: 30px;
+}
 
-/* ★ナビ用仮css設定 */
-button.modal-aside {
-  display: none; }
-  @media (max-width: 480px) {
-    button.modal-aside {
-      display: block; } }
-
-nav.sp_nav {
-  display: none; }
+section#relation div.relation-box h3.relation-title {
+    font-weight: bold;
+    font-size: 10px;
+    font-size: 1rem;
+}
 
 @media (max-width: 480px) {
-  nav.sp_nav.open.fixed {
-    display: block;
-    position: fixed;
-    background: rgba(255, 231, 0, 0.75);
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    z-index: 99;
-    padding: 15px;
-    transform: translate3d(0px, 0px, 250px); }
+    section#relation div.relation-box h3.relation-title {
+        text-align: center;
+    }
+}
+
+section#relation div.relation-box div.column_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    section#relation div.relation-box div.column_box {
+        display: block;
+    }
+}
+
+section#relation div.relation-box div.column_box div.column_2 {
+    width: 50%;
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    section#relation div.relation-box div.column_box div.column_2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+section#relation div.relation-box div.column_box div.column_2:last-of-type {
+    margin-right: 0;
+    margin-left: 2%;
+}
+
+@media (max-width: 480px) {
+    section#relation div.relation-box div.column_box div.column_2:last-of-type {
+        margin-left: 0;
+    }
+}
+
+section#relation div.relation-box div.column_box div.column_2:first-of-type {
+    width: 30%;
+}
+
+@media (max-width: 480px) {
+    section#relation div.relation-box div.column_box div.column_2:first-of-type {
+        width: 100%;
+    }
+}
+
+section#relation div.relation-box div.column_box div.column_2:last-of-type {
+    width: 70%;
+}
+
+@media (max-width: 480px) {
+    section#relation div.relation-box div.column_box div.column_2:last-of-type {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    section#relation div.relation-box div.column_box div.column_2 img {
+        margin: 0 auto;
+    }
+}
+
+
+/* ★ナビ用仮css設定 */
+
+button.modal-aside {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    button.modal-aside {
+        display: block;
+    }
+}
+
+nav.sp_nav {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    nav.sp_nav.open.fixed {
+        display: block;
+        position: fixed;
+        background: rgba(255, 231, 0, 0.75);
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        padding: 15px;
+        transform: translate3d(0px, 0px, 250px);
+    }
     nav.sp_nav.open.fixed ul {
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 94%;
-      background: #fff;
-      z-index: 100;
-      padding: 15px 25px;
-      margin: 3%; }
-      nav.sp_nav.open.fixed ul li a {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 94%;
+        background: #fff;
+        z-index: 100;
+        padding: 15px 25px;
+        margin: 3%;
+    }
+    nav.sp_nav.open.fixed ul li a {
         width: 100%;
         border-bottom: 1px solid #e8e8e8;
         font-size: 15px;
@@ -402,20 +615,24 @@ nav.sp_nav {
         padding-bottom: 10px;
         margin-bottom: 0 !important;
         color: #777;
-        display: block; }
+        display: block;
+    }
     nav.sp_nav.open.fixed button.close {
-      display: none;
-      z-index: 110;
-      position: fixed;
-      background: #aaa;
-      color: #fff;
-      width: 50%;
-      left: 25%;
-      bottom: 40px;
-      padding: 5px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 5px;
-      overflow: visible; } }
+        display: none;
+        z-index: 110;
+        position: fixed;
+        background: #aaa;
+        color: #fff;
+        width: 50%;
+        left: 25%;
+        bottom: 40px;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        overflow: visible;
+    }
+}
+
 
 /*# sourceMappingURL=books-info.css.map */
