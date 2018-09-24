@@ -67,7 +67,9 @@
                     <h1 class="info-title">
                         <?php the_title(); ?>
                     </h1>
-                    <img class="info-key" src="/info_images/key_visual.png" alt="" width="100%">
+                    <?php if( get_field('book_image') ): ?>
+                    <img src="<?php the_field('book_image'); ?>" />
+                    <?php endif; ?>
                     <div class="anchor-box">
                         <a href="#book"><i class="fas fa-angle-double-down"></i>本のご紹介</a>
                         <a href="#review"><i class="fas fa-angle-double-down"></i>みんなの声</a>
@@ -77,21 +79,8 @@
 
                     <section id="book">
                         <h2 class="info-title">本のご紹介</h2>
-                        <section>
-                            <h3 class="title">コンセプト</h3>
-                            <p>供から大人まで楽しめる<br>世界にひとつだけのオリジナルぬり絵本<br>ぬり絵をしながら、その時に思い描く色の異なる世界観の旅をする
-                            </p>
-                        </section>
-                        <section>
-                            <h3 class="title">ストーリー</h3>
-                            <p>キラキラというヒカリの玉と色々な場所を巡る旅物語<br> 色々な場所を旅して、キラキラは沢山の色と出会い、交ざり合い、輝きを増す
-                            </p>
-                        </section>
-                        <section>
-                            <h3 class="title">johさんからのメッセージ</h3>
-                            <p>キラキラと一緒に旅をしながら、あなたが思う色を塗り、世界に１つしかない絵本を作ってみませんか<br> 絵本がこの絵本を作り上げたあなた自身にとって生きる活力になることを願っています
-                            </p>
-                        </section>
+                        <?php echo get_post_meta($post->ID, 'book_info', true); ?>
+
                     </section>
                     <section id="review">
                         <h2 class="info-title">みんなの声</h2>
@@ -183,7 +172,7 @@
                                     </dd>
                                 </dl>
 
-                                <a class="btn" href="http://shop.hatidori.jp/items/8756739">ショップへ</a>
+                                <a class="btn" href="<?php echo get_post_meta($post->ID, 'shop_link', true); ?>" target="_blank">ショップへ</a>
                             </div>
                         </div>
                     </section>
@@ -210,51 +199,21 @@
                                         <?php if(post_custom('instagram_on') == 'display'): ?>
                                         <li><a href="<?php echo get_post_meta($post->ID, 'instagram', true); ?>"><i class="fab fa-instagram fa-2x"></i></a></li>
                                         <?php endif; ?>
-
                                     </ul>
                                 </div>
                                 <p>
-                                    <?php echo get_post_meta($post->ID, 'author_text', true); ?>
+                                    <?php echo nl2br(get_post_meta($post->ID, 'author_text', true)); ?>
                                 </p>
-                                <p>ブログ <a href="#">https://ameblo.jp/samplesample</a></p>
                             </div>
                         </div>
-                        <!-- <div class="movie">
-                        <iframe width="460" height="315" src="https://www.youtube.com/embed/oL4Vg4dVZZQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
+                        <?php if(post_custom('twitter_on') == 'display'): ?>
+                        <div class="movie">
+                            <?php echo get_post_meta($post->ID, 'movie', true); ?>
+                        </div>
+                        <?php endif; ?>
                         <div class="event">
-                            <p class="event_title">参加イベント（2009年〜現在）</p>
-                            <ul>
-                                <li>GEISAI（2009年 #12, #13, 2010年 #14）
-                                </li>
-                                <li>クリエイターズマーケット（2009年 vol.12）
-                                </li>
-                                <li>galleryINTROART個展（2009年, 2010年）
-                                </li>
-                                <li>白展（2009〜2013年 vol.2〜6）
-                                </li>
-                                <li>名古屋港アートフェスティバル（2010〜2013年）
-                                </li>
-                                <li>ホームに帰る（2011年 vol.2）
-                                </li>
-                                <li>呼吸展（2012年 vol.3, 2013年 vol.4）
-                                </li>
-                                <li>gallery Conceal Shibuya FUSE（2016年 vol.4 session）
-                                </li>
+                            <?php echo nl2br(get_post_meta($post->ID, 'author_event', true)); ?>
 
-                            </ul>
-                            <p class="event_title">個展</p>
-                            <ul>
-                                <li>joh solo exhibition（2012年）</li>
-                            </ul>
-                            <p class="event_title">ライブペイント</p>
-                            <ul>
-                                <li>DESIGNFESTA（2014 vol.39, 2015〜2017年 vol.41〜45）
-                                </li>
-                                <li>クリエイターズマーケット（2015年 vol.33）
-                                </li>
-                                <li>LaLaガーデンつくば店（2015〜2016年 計3回）
-                                </li>
-                            </ul>
                         </div>
                     </section>
                     <?php if(post_custom('relation_on') == 'display'): ?>

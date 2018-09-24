@@ -162,7 +162,7 @@ section#review {
                 }
                 &:after {
                     content: "";
-                    background: url(/info_images/stamp.png);
+                    background: url(../images/special/stamp.png);
                     background-size: 70px 51px;
                     width: 70px;
                     height: 51px;
@@ -278,10 +278,10 @@ section#author {
                 p.name {
                     font-family: Yu Mincho, 游明朝, Hiragino Mincho Pro, ＭＳ 明朝;
                     font-weight: bold;
-                    @include fontsize(20);
+                    @include fontsize(11);
                     width: 50%;
                     @include sp {
-                        @include fontsize (15);
+                        @include fontsize (9);
                     }
                 }
                 ul.sns {
